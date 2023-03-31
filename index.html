@@ -4,36 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Calculator</title>
     <link rel="stylesheet" href="./css/stylesheet.css" />
-    <title>Kalkulator</title>
   </head>
   <body>
-    <main>
-      <div class="show">
-        <input type="text" id="inputLabel" placeholder="0" readonly>
+    <div class="calculator">
+      <input type="text" class="calculator-screen" value="0" disabled />
+      <div class="calculator-keys">
+        <div class="row">
+          <button class="all-clear">AC</button>
+          <button class="percentage">%</button>
+          <button class="operator" value="/">&divide;</button>
+        </div>
+        <div class="row">
+          <button class="number" value="7">7</button>
+          <button class="number" value="8">8</button>
+          <button class="number" value="9">9</button>
+          <button class="operator" value="*">&times;</button>
+        </div>
+        <div class="row">
+          <button class="number" value="4">4</button>
+          <button class="number" value="5">5</button>
+          <button class="number" value="6">6</button>
+          <button class="operator" value="-">-</button>
+        </div>
+        <div class="row">
+          <button class="number" value="1">1</button>
+          <button class="number" value="2">2</button>
+          <button class="number" value="3">3</button>
+          <button class="operator" value="+">+</button>
+        </div>
+        <div class="row">
+          <button class="number zero-btn" value="0">0</button>
+          <button class="decimal" value=".">.</button>
+          <button class="equal-sign">=</button>
+        </div>
       </div>
-      <div class="wrapper">
-        <button onClick="clearScreen()">C</button>
-        <button onClick="insert('/')">/</button>
-        <button onClick="insert('*')">*</button>
-        <button onClick="deleteChar()"><i class="material-icons">backspace</i></button>
-        <button onClick="insert('7')">7</button>
-        <button onClick="insert('8')">8</button>
-        <button onClick="insert('9')">9</button>
-        <button onClick="insert('-')">-</button>
-        <button onClick="insert('4')">4</button>
-        <button onClick="insert('5')">5</button>
-        <button onClick="insert('6')">6</button>
-        <button onClick="insert('+')">+</button>
-        <button onClick="insert('1')">1</button>
-        <button onClick="insert('2')">2</button>
-        <button onClick="insert('3')">3</button>
-        <button onClick="calculate()">=</button>
-        <button onClick="insert('0');">0</button>
-        <button onClick="insert('.')">.</button>
-      </div>
-    </main>
+    </div>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
