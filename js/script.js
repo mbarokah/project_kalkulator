@@ -48,7 +48,8 @@ const updateScreen = (number) => {
 }
 
 const calculate = () => {
-  let result = currentNumber
+
+  let result = ''
   switch(calculationOperations) {
     case "+":
       result = parseFloat(preNumber) + parseFloat(currentNumber)
